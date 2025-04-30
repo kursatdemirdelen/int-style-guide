@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Intellium Style Guide
 
-## Getting Started
+Bu proje, Intellium için geliştirilmiş kapsamlı bir tasarım sistemi ve stil rehberidir. Tüm UI bileşenleri, renk paletleri, tipografi ve diğer tasarım elementleri için tutarlı bir kaynak sağlar.
 
-First, run the development server:
+## Özellikler
+
+- 🎨 Renk Paleti ve Tema Yönetimi
+- 📝 Tipografi Sistemi
+- 📏 Boşluklandırma ve Grid Sistemi
+- 🧩 Form Elemanları
+- 📱 Responsive Tasarım
+- 🎯 Erişilebilirlik Standartları
+- 🔄 Tema Değiştirme Desteği
+
+## Başlangıç
+
+### Gereksinimler
+
+- Node.js 18.x veya üzeri
+- npm veya yarn
+
+### Kurulum
 
 ```bash
+# Projeyi klonlayın
+git clone [repo-url]
+
+# Bağımlılıkları yükleyin
+npm install
+# veya
+yarn install
+
+# Geliştirme sunucusunu başlatın
 npm run dev
-# or
+# veya
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tarayıcınızda [http://localhost:3000](http://localhost:3000) adresini açın.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Kullanım
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Stil rehberi aşağıdaki ana bölümleri içerir:
 
-## Learn More
+1. **Renk Paleti**: Tema renkleri ve kullanım örnekleri
+2. **Tipografi**: Font ailesi, boyutlar ve hiyerarşi
+3. **Boşluklandırma**: Tutarlı boşluk ve hizalama sistemi
+4. **Form Elemanları**: Input, button, select vb. bileşenler
+5. **Düzen Rehberi**: Grid sistemi ve layout örnekleri
+6. **Navigasyon**: Menü ve gezinme bileşenleri
+7. **Veri Gösterimi**: Tablolar, kartlar ve diğer veri bileşenleri
+8. **Etkileşim**: Feedback ve kullanıcı etkileşimi bileşenleri
+9. **İkonlar**: Kullanılan ikon seti ve kullanım örnekleri
 
-To learn more about Next.js, take a look at the following resources:
+## Katkıda Bulunma
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Bu repository'yi fork edin
+2. Yeni bir branch oluşturun (`git checkout -b feature/amazing-feature`)
+3. Değişikliklerinizi commit edin (`git commit -m 'Add some amazing feature'`)
+4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
+5. Pull Request oluşturun
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Lisans
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Bu proje Intellium tarafından geliştirilmiştir ve tüm hakları saklıdır.

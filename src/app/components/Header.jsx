@@ -1,8 +1,9 @@
+"use client";
 import React from "react";
 import { Col, Row, Typography } from "antd";
 import Image from "next/image";
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
 
 const Header = () => {
   return (
@@ -28,12 +29,22 @@ const Header = () => {
             />
           </Col>
           <Col xs={24} md={20} lg={22}>
-            <Title level={1} style={{ color: "#fff", marginTop: 0 }}>
-              Intellium Style Guide
-            </Title>
-            <Title level={5} style={{ color: "#fff", marginBottom: 0 }}>
-              Design System
-            </Title>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              <div>
+                <Title level={1} style={{ color: "#fff", marginTop: 0 }}>
+                  Intellium Style Guide
+                </Title>
+                <Title level={5} style={{ color: "#fff", marginBottom: 0 }}>
+                  Design System
+                </Title>
+              </div>
+            </div>
           </Col>
         </Row>
       </div>

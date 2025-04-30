@@ -71,7 +71,12 @@ const IconsGuide = () => (
       Optimize Edilmiş Resimler
     </Title>
     <Card style={{ marginTop: 16 }}>
-      <Image src="/kedi.jpg" alt="Örnek Resim" width={200} height={200} />
+      <Image
+        src="/images/kedi.jpg"
+        alt="Örnek Resim"
+        width={200}
+        height={200}
+      />
       <Text code style={{ display: "block", marginTop: 16 }}>
         {`<Image src="/kedi.jpg" alt="Örnek Resim" width={200} height={200} />`}
       </Text>

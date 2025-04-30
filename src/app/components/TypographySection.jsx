@@ -8,6 +8,7 @@ const TypographySection = () => {
       title: "Stil",
       dataIndex: "stil",
       key: "stil",
+      align: "center",
       render: (text) => (
         <span
           style={{
@@ -19,14 +20,14 @@ const TypographySection = () => {
         </span>
       ),
       fixed: "left",
-      width: 120,
+      width: 60,
     },
     {
       title: "Boyut",
       dataIndex: "boyut",
       key: "boyut",
       align: "center",
-      width: 100,
+      width: 60,
       render: (text) => (
         <span
           style={{
@@ -43,7 +44,7 @@ const TypographySection = () => {
       dataIndex: "agirlik",
       key: "agirlik",
       align: "center",
-      width: 120,
+      width: 80,
       render: (text) => (
         <span
           style={{
@@ -58,13 +59,13 @@ const TypographySection = () => {
     {
       title: "Kullanım Alanı",
       dataIndex: "kullanim",
+      align: "center",
       key: "kullanim",
-      responsive: ["md"],
+      width: 200,
       render: (text) => (
         <span
           style={{
             color: "var(--color-text-secondary)",
-            whiteSpace: "nowrap",
           }}
         >
           {text}
@@ -141,23 +142,31 @@ const TypographySection = () => {
 
       <Row gutter={[16, 16]}>
         <Col xs={24}>
-          <Table
-            columns={columns}
-            dataSource={data}
-            pagination={false}
-            bordered
-            size="large"
+          <div
             style={{
-              background: "var(--color-white)",
-              borderRadius: "8px",
-              boxShadow: "var(--shadow-default)",
-              border: "1px solid var(--color-border)",
+              maxHeight: "calc(100vh - 300px)",
+              overflow: "auto",
+              marginBottom: "40px",
             }}
-            scroll={{
-              x: "max-content",
-            }}
-            tableLayout="auto"
-          />
+          >
+            <Table
+              columns={columns}
+              dataSource={data}
+              pagination={false}
+              bordered
+              size="middle"
+              style={{
+                background: "var(--color-white)",
+                borderRadius: "8px",
+                boxShadow: "var(--shadow-default)",
+                border: "1px solid var(--color-border)",
+                minWidth: "800px",
+                maxWidth: "800px",
+                width: "100%",
+              }}
+              tableLayout="fixed"
+            />
+          </div>
         </Col>
       </Row>
     </div>

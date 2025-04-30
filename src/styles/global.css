@@ -1,0 +1,184 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
+/* Root CSS Değişkenleri */
+:root {
+  /* Renk Paleti */
+  --color-primary: #2596be;
+  --color-primary-light: #40a9ff;
+  --color-primary-dark: #1a7daf;
+  --color-primary-contrast: #ffffff;
+  
+  --color-secondary: #25be46;
+  --color-secondary-light: #52d46a;
+  --color-secondary-dark: #1a8f33;
+  --color-secondary-contrast: #ffffff;
+  
+  --color-background: #F8F9FA;
+  --color-background-paper: #FFFFFF;
+  --color-white: #FFFFFF;
+  
+  --color-text-primary: #333333;
+  --color-text-secondary: #888888;
+  --color-text-disabled: #CCCCCC;
+  
+  --color-border: #E0E0E0;
+  --color-border-light: #E0E0E0;
+  --color-border-dark: #888888;
+
+  /* Tipografi */
+  --font-family: 'Roboto', sans-serif;
+  --font-size-h1: 24px;
+  --font-size-h2: 20px;
+  --font-size-h3: 16px;
+  --font-size-body: 14px;
+  --font-size-small: 12px;
+
+  /* Spacing */
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
+
+  /* Gölge ve Border */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+
+  /* Breakpoints */
+  --breakpoint-xs: 0px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1600px;
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Stili */
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  line-height: 1.5;
+}
+
+/* Linkler */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Ant Design Override */
+.ant-card {
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background-paper);
+}
+
+/* Buton Stilleri */
+.ant-btn-primary {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  border-radius: var(--border-radius-sm);
+  font-weight: 500;
+}
+
+.ant-btn-primary:hover {
+  background-color: var(--color-primary-dark) !important;
+  border-color: var(--color-primary-dark) !important;
+}
+
+/* Input Stilleri */
+.ant-input,
+.ant-input-affix-wrapper {
+  border-radius: var(--border-radius-sm) !important;
+  border-color: var(--color-border) !important;
+  background-color: var(--color-background-paper) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.ant-input:focus,
+.ant-input-affix-wrapper:focus {
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 2px rgba(37, 150, 190, 0.2) !important;
+}
+
+/* Menu Stilleri */
+.ant-menu {
+  background-color: var(--color-background) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.ant-menu-item {
+  color: var(--color-text-primary) !important;
+}
+
+.ant-menu-item:hover {
+  color: var(--color-primary) !important;
+}
+
+.ant-menu-item-selected {
+  color: var(--color-primary) !important;
+  background-color: var(--color-background-paper) !important;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+.mt-1 { margin-top: var(--spacing-xxs); }
+.mt-2 { margin-top: var(--spacing-xs); }
+.mt-3 { margin-top: var(--spacing-sm); }
+.mt-4 { margin-top: var(--spacing-md); }
+.mt-5 { margin-top: var(--spacing-lg); }
+
+.mb-1 { margin-bottom: var(--spacing-xxs); }
+.mb-2 { margin-bottom: var(--spacing-xs); }
+.mb-3 { margin-bottom: var(--spacing-sm); }
+.mb-4 { margin-bottom: var(--spacing-md); }
+.mb-5 { margin-bottom: var(--spacing-lg); }
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+  margin: 0;
+  line-height: 1.5;
+} 

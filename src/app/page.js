@@ -100,7 +100,7 @@ export default function Home() {
         <Content
           style={{
             padding: "24px",
-            background: "var(--color-white)",
+            background: "var(--color-background-paper)",
             color: "var(--color-text-primary)",
             transition: "background 0.3s ease, color 0.3s ease",
           }}
@@ -109,18 +109,18 @@ export default function Home() {
         </Content>
       </Layout>
       <Footer
-      style={{
-        textAlign: "center",
-        backgroundColor: "var(--color-primary)",  
-        color: "#fff", 
-        position: "fixed",  
-        bottom: 0,  
-        width: "100%",  
-        padding: "8px 0",   
-      }}
-    >
-     Intellium Style Guide © 2025  
-    </Footer>
+        style={{
+          textAlign: "center",
+          backgroundColor: "var(--color-primary)",
+          color: "#fff",
+          position: "fixed",
+          bottom: 0,
+          width: "100%",
+          padding: "8px 0",
+        }}
+      >
+        Intellium Style Guide © 2025
+      </Footer>
 
       {/* Mobil İçin Drawer */}
       <Drawer
