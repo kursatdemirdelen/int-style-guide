@@ -20,7 +20,7 @@ const Header = () => {
         >
           <Col xs={24} md={4} lg={2}>
             <Image
-              src="/int.png"
+              src="/images/int.png"
               alt="Örnek Resim"
               width={64}
               height={64}

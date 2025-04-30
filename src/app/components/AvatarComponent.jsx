@@ -2,11 +2,11 @@ import React from "react";
 import { Avatar, Tooltip } from "antd";
 
 const users = [
-  { id: 1, name: "Ali Can", imageUrl: "/user1.jpg" },
-  { id: 2, name: "Ayşe Yılmaz", imageUrl: "/user.jpg" },
+  { id: 1, name: "Ali Can", imageUrl: "/images/user1.jpg" },
+  { id: 2, name: "Ayşe Yılmaz", imageUrl: "/images/user.jpg" },
   { id: 3, name: "Mehmet Demir", imageUrl: "" },
-  { id: 4, name: "Fatma Kaya", imageUrl: "/kedi.jpg" },
-  { id: 5, name: "Ahmet Yıldız", imageUrl: "/int.png" },
+  { id: 4, name: "Fatma Kaya", imageUrl: "/images/kedi.jpg" },
+  { id: 5, name: "Ahmet Yıldız", imageUrl: "/images/int.png" },
 ];
 
 // Renk Üretici Fonksiyon
